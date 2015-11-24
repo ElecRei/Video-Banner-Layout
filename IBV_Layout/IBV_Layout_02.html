@@ -61,24 +61,6 @@
       background-image: none;
       background-color: rgb(51, 60, 78);
     }
-    .gwd-div-9h58 {
-      position: absolute;
-      width: 40px;
-      height: 250px;
-      left: 300px;
-      top: 0px;
-      background-image: none;
-      background-color: rgb(192, 57, 43);
-    }
-    .gwd-taparea-2pjl {
-      position: absolute;
-      transform-style: preserve-3d;
-      width: 40px;
-      height: 250px;
-      transform-origin: 20px 125px 0px;
-      top: 0px;
-      left: 260px;
-    }
     .gwd-div-k7z0 {
       position: absolute;
       width: 300px;
@@ -107,14 +89,23 @@
       width: 300px;
       height: 210px;
       left: 0px;
-      top: 20px;
+      top: 0px;
       background-image: none;
       background-color: rgb(45, 45, 45);
+    }
+    .gwd-div-1itc {
+      position: absolute;
+      width: 300px;
+      height: 39.9038px;
+      top: 210px;
+      left: 260px;
+      cursor: pointer;
+      background-image: none;
+      background-color: rgb(192, 57, 43);
     }
   </style>
   <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
   <link href="gwdvideo_style.css" data-version="6" data-exports-type="gwd-video" rel="stylesheet">
-  <link href="gwdtaparea_style.css" data-version="3" data-exports-type="gwd-taparea" rel="stylesheet">
   <link href="gwddoubleclick_style.css" data-version="10" data-exports-type="gwd-doubleclick" rel="stylesheet">
   <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -124,17 +115,8 @@
   <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
   <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-doubleclick" type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
   <script data-source="gwddoubleclick_min.js" data-version="10" data-exports-type="gwd-doubleclick" type="text/javascript" src="gwddoubleclick_min.js"></script>
-  <script data-source="gwdtaparea_min.js" data-version="3" data-exports-type="gwd-taparea" type="text/javascript" src="gwdtaparea_min.js"></script>
   <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
   <script type="text/javascript" gwd-events="handlers">
-    gwd.auto_Gwd_taparea_1Mouseover = function(event) {
-      // GWD Predefined Function
-      gwd.actions.events.setInlineStyle('ibv_controls_bar', 'transition: all 0.2s ease; left: 260px; ');
-    };
-    gwd.auto_Gwd_taparea_1Mouseout = function(event) {
-      // GWD Predefined Function
-      gwd.actions.events.setInlineStyle('ibv_controls_bar', 'transition: all 0.2s ease; left: 300px; ');
-    };
     gwd.auto_Header_logoMouseover = function(event) {
       // GWD Predefined Function
       gwd.actions.events.setInlineStyle('header_logo', 'opacity: 1; ');
@@ -143,21 +125,29 @@
       // GWD Predefined Function
       gwd.actions.events.setInlineStyle('header_logo', 'opacity: 0.3; ');
     };
+    gwd.auto_Ibv_controlsMouseover = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('ibv_controls', 'transition: all 0.2s ease; left: 0px; ');
+    };
+    gwd.auto_Ibv_controlsMouseout = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('ibv_controls', 'transition: all 0.2s ease; left: 260px; ');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
      // This script block is auto-generated. Please do not edit!
     gwd.actions.events.registerEventHandlers = function(event) {
-      gwd.actions.events.addHandler('controls_expand', 'mouseover', gwd.auto_Gwd_taparea_1Mouseover, false);
-      gwd.actions.events.addHandler('controls_expand', 'mouseout', gwd.auto_Gwd_taparea_1Mouseout, false);
       gwd.actions.events.addHandler('header_logo', 'mouseover', gwd.auto_Header_logoMouseover, false);
       gwd.actions.events.addHandler('header_logo', 'mouseout', gwd.auto_Header_logoMouseout, false);
+      gwd.actions.events.addHandler('ibv_controls', 'mouseover', gwd.auto_Ibv_controlsMouseover, false);
+      gwd.actions.events.addHandler('ibv_controls', 'mouseout', gwd.auto_Ibv_controlsMouseout, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
-      gwd.actions.events.removeHandler('controls_expand', 'mouseover', gwd.auto_Gwd_taparea_1Mouseover, false);
-      gwd.actions.events.removeHandler('controls_expand', 'mouseout', gwd.auto_Gwd_taparea_1Mouseout, false);
       gwd.actions.events.removeHandler('header_logo', 'mouseover', gwd.auto_Header_logoMouseover, false);
       gwd.actions.events.removeHandler('header_logo', 'mouseout', gwd.auto_Header_logoMouseout, false);
+      gwd.actions.events.removeHandler('ibv_controls', 'mouseover', gwd.auto_Ibv_controlsMouseover, false);
+      gwd.actions.events.removeHandler('ibv_controls', 'mouseout', gwd.auto_Ibv_controlsMouseout, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -172,11 +162,10 @@
         <div class="gwd-page-content gwd-page-size">
           <div class="gwd-div-glfg" id="ibv_background" style=""></div>
           <video is="gwd-video" id="ibv_video" muted="" sources="" class="gwd-video-w7n3" style=""></video>
-          <div class="gwd-div-9h58" id="ibv_controls_bar" style=""></div>
           <div class="gwd-div-k7z0" id="ibv_header">
             <p class="gwd-p-1915" id="header_logo" style="">Company Logo</p>
           </div>
-          <gwd-taparea id="controls_expand" class="gwd-taparea-2pjl"></gwd-taparea>
+          <div class="gwd-div-1itc" id="ibv_controls" style=""></div>
         </div>
       </div>
     </div>

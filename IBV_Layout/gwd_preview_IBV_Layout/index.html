@@ -116,15 +116,17 @@ body {
     left: 12px;
     top: 9px;
 }
-.gwd-youtube-fb71 {
+.gwd-video-w7n3 {
     position: absolute;
-    left: 0px;
-    top: 0px;
     width: 300px;
-    height: 250px;
+    height: 210px;
+    left: 0px;
+    top: 20px;
+    background-image: none;
+    background-color: rgb(45, 45, 45);
 }</style>
   <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
-  <link href="gwdyoutube_style.css" data-version="11" data-exports-type="gwd-youtube" rel="stylesheet">
+  <link href="gwdvideo_style.css" data-version="6" data-exports-type="gwd-video" rel="stylesheet">
   <link href="gwdtaparea_style.css" data-version="3" data-exports-type="gwd-taparea" rel="stylesheet">
   <link href="gwddoubleclick_style.css" data-version="10" data-exports-type="gwd-doubleclick" rel="stylesheet">
   <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
@@ -173,31 +175,16 @@ body {
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
   </script>
-  <script data-source="gwdyoutube_min.js" data-version="11" data-exports-type="gwd-youtube" type="text/javascript" src="gwdyoutube_min.js"></script>
+  <script data-source="gwdvideo_min.js" data-version="6" data-exports-type="gwd-video" type="text/javascript" src="gwdvideo_min.js"></script>
 </head>
 
 <body>
   <gwd-doubleclick id="gwd-ad" polite-load="">
-    <gwd-metric-configuration>
-      <gwd-metric-event source="gwd-youtube_1" event="playpressed" metric="gwd-youtube_1: YouTube play"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="paused" metric="gwd-youtube_1: YouTube pause"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="ended" metric="gwd-youtube_1: YouTube end"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="replayed" metric="gwd-youtube_1: YouTube replayed"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="viewed25percent" metric="gwd-youtube_1: YouTube first quartile"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="viewed50percent" metric="gwd-youtube_1: YouTube midpoint"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="viewed75percent" metric="gwd-youtube_1: YouTube third quartile"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="viewed100percent" metric="gwd-youtube_1: YouTube complete"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="previewed0percent" metric="gwd-youtube_1: YouTube preview started"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="previewed25percent" metric="gwd-youtube_1: YouTube preview first quartile"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="previewed50percent" metric="gwd-youtube_1: YouTube preview midpoint"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="previewed75percent" metric="gwd-youtube_1: YouTube preview third quartile"></gwd-metric-event>
-      <gwd-metric-event source="gwd-youtube_1" event="previewed100percent" metric="gwd-youtube_1: YouTube preview complete"></gwd-metric-event>
-    </gwd-metric-configuration>
     <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
       <div is="gwd-page" id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="300px" data-gwd-height="250px">
         <div class="gwd-page-content gwd-page-size">
           <div class="gwd-div-glfg" id="ibv_background" style=""></div>
-          <gwd-youtube id="gwd-youtube_1" video-url="https://youtu.be/Cws8r_vFpFs" annotations="" related="" title="" class="gwd-youtube-fb71" color="red"></gwd-youtube>
+          <video is="gwd-video" id="ibv_video" muted="" sources="" class="gwd-video-w7n3" style=""></video>
           <div class="gwd-div-9h58" id="ibv_controls_bar" style=""></div>
           <div class="gwd-div-k7z0" id="ibv_header">
             <p class="gwd-p-1915" id="header_logo" style="">Company Logo</p>
@@ -247,17 +234,5 @@ body {
 
 
 <script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script><script data-exports-type="gwd-studio-registration">function StudioExports() {
-Enabler.counter("gwd-youtube_1: YouTube play");
-Enabler.counter("gwd-youtube_1: YouTube pause");
-Enabler.counter("gwd-youtube_1: YouTube end");
-Enabler.counter("gwd-youtube_1: YouTube replayed");
-Enabler.counter("gwd-youtube_1: YouTube first quartile");
-Enabler.counter("gwd-youtube_1: YouTube midpoint");
-Enabler.counter("gwd-youtube_1: YouTube third quartile");
-Enabler.counter("gwd-youtube_1: YouTube complete");
-Enabler.counter("gwd-youtube_1: YouTube preview started");
-Enabler.counter("gwd-youtube_1: YouTube preview first quartile");
-Enabler.counter("gwd-youtube_1: YouTube preview midpoint");
-Enabler.counter("gwd-youtube_1: YouTube preview third quartile");
-Enabler.counter("gwd-youtube_1: YouTube preview complete");
-}</script><script type="text/gwd-admetadata">{"version":1,"type":"DoubleClick","format":"","template":"","politeload":true,"fullscreen":false,"counters":[{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube play"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube pause"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube end"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube replayed"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube complete"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview started"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview complete"}],"timers":[],"exits":[],"creativeProperties":{"minWidth":300,"minHeight":250,"maxWidth":300,"maxHeight":250},"components":["gwd-taparea","gwd-youtube","gwd-doubleclick","gwd-page","gwd-pagedeck"]}</script></body></html>
+studio.video.Reporter.attach("ibv_video", dummyVideoElem, false);
+}</script><script type="text/gwd-admetadata">{"version":1,"type":"DoubleClick","format":"","template":"","politeload":true,"fullscreen":false,"counters":[{"sourceType":"video","source":"ibv_video","metric":"ibv_video","isAutoplay":false}],"timers":[],"exits":[],"creativeProperties":{"minWidth":300,"minHeight":250,"maxWidth":300,"maxHeight":250},"components":["gwd-taparea","gwd-video","gwd-doubleclick","gwd-page","gwd-pagedeck"]}</script></body></html>
